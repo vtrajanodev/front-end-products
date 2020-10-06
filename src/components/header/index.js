@@ -3,7 +3,7 @@ import './styles.css'
 
 const Header = () => (
     <header id="main-header">
-        JShunt
+        Register Products - Helping you since 1988
     </header>
 )
 

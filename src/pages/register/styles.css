@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #da552f;
+    padding: 30px; 
+    border-radius: 8px;
+    margin: 15px auto;
+    max-width: 530px;
+    align-items: center; 
+    height: auto;
+    color: white;
+}
+
+form h1{
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+form fieldset{
+    margin-top: 30px;
+
+    border: 0;
+}
+
+
+fieldset legend{
+    font-size: 17px;
+    margin-bottom: 30px;
+    align-items: center;
+    font-weight: bold;
+}
+
+form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+form .field-group{
+    display: flex;
+    /* flex-direction: row; */
+}
+
+form input{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 14px 22px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;   
+}
+
+form label{
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+form button{
+    display: inline-flex;
+    width: 180px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #da552f ;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form button:hover{
+    background: rgb(201, 201, 201);
+    color: #da552f;
+    font-weight: bold;
+}
+
+form a{
+    height: 40px;
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #da552f ;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+form a:hover{
+    background: rgb(201, 201, 201);
+    color: #da552f;
+    font-weight: bold;
+}
+

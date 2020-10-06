@@ -43,9 +43,6 @@ export default class Product extends Component {
                     URL: <a href={product.url} > {product.url}</a>
                 </p>
 
-                <button>Deletar</button>
-
-
             </div>
 
           

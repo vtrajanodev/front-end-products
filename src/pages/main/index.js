@@ -76,13 +76,16 @@ export default class Main extends Component{
                     <strong>{product.title}</strong>
                     <p>{product.description}</p>
                     <Link to={`/products/${product._id}`}>Acessar</Link>
+                    <button>Deletar</button>
                 </article>
             
             ))}
             <div className="actions">
                
                 <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
+                <a href="/">Inicio</a>
                 <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próximo</button>
+                
             </div>
 
 
