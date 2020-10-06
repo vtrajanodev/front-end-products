@@ -69,6 +69,16 @@ export default class Main extends Component{
            
             <div className= "product-list">
             
+            <div className="actions">
+               
+               <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
+               <a href="/">Inicio</a>
+               <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próximo</button>
+               
+            </div>
+            
+            
+            
             {products.map(product => (
 
                 
@@ -80,14 +90,14 @@ export default class Main extends Component{
                 </article>
             
             ))}
-            <div className="actions">
-               
-                <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
-                <a href="/">Inicio</a>
-                <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próximo</button>
-                
-            </div>
 
+                <div className="actions">
+               
+                    <button disabled={page === 1} onClick={this.prevPage} >Anterior</button>
+                    <a href="/">Inicio</a>
+                    <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próximo</button>
+                
+                </div>
 
         </div> )
         
