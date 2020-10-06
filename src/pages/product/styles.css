@@ -20,6 +20,7 @@
 
 .product-info a {
     color: #069;
+    
 }
 
 /* .product-info button {
@@ -49,4 +50,29 @@
 .product-info  button:hover{
     background: #da552f;
     color: #fff;
+}
+
+ a.back{
+    height: 35px;
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #da552f ;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 auto;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+a.back:hover{
+    background: #da552f;
+    color: white;
+    font-weight: bold;
 }

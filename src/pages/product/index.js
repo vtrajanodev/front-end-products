@@ -34,6 +34,8 @@ export default class Product extends Component {
 
         
         return (
+            
+
             <div className = "product-info">
                 <h1>{product.title}</h1>
                     <p>_id: {product._id}</p>
@@ -43,6 +45,7 @@ export default class Product extends Component {
                     URL: <a href={product.url} > {product.url}</a>
                 </p>
 
+                <a href="/products" className="back">Back to products</a>
             </div>
 
           
