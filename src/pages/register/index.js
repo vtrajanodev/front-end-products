@@ -8,6 +8,10 @@ export default class Register extends Component {
     state = {
         infoProduct: {}
     }
+
+    componentDidMount(){
+        document.title = 'Cadastro de produtos';
+    }
     
     async getIndex(){
 

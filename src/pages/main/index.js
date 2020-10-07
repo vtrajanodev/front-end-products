@@ -14,6 +14,7 @@ export default class Main extends Component{
     
     componentDidMount(){
         this.loadProducts()
+        document.title = 'Listagem de produtos';
 
     }
     

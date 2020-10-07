@@ -12,6 +12,8 @@ export default class Product extends Component {
     }
     
     async componentDidMount() {
+
+        document.title = 'Detalhes do produto';
        
         const { id } =  this.props.match.params
 
