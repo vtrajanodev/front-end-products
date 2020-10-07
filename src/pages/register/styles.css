@@ -141,3 +141,10 @@ form a:hover{
     }
 }
 
+@media (max-height: 650px){
+    form {
+        padding: 20px; 
+        
+    }
+}
+
