@@ -49,18 +49,12 @@ export default class Main extends Component{
 
     deleteProducts = async() => {
         
-        
-
         await api.delete(`/products/:id`)
 
         return console.log('Apagado com sucesso')
    
-        
     }
      
-
-   
-
     render(){
 
         const {products , page, productInfo} = this.state

@@ -1,3 +1,7 @@
+body{
+    background-color: #ddd;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -111,3 +115,21 @@ form a:hover{
     font-weight: bold;
 }
 
+@media (max-width: 550px){
+    form {
+       margin: 15px 10px 10px 10px;
+    } 
+}
+
+@media (min-width: 1300px){
+    form {
+        background-color: #da552f;
+        padding: 50px; 
+        border-radius: 8px;
+        margin: 15px auto;
+        max-width: 530px;
+        align-items: center; 
+        height: auto;
+        color: white;
+    }
+}

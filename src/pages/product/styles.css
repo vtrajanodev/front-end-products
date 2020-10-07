@@ -76,3 +76,34 @@ a.back:hover{
     color: white;
     font-weight: bold;
 }
+
+@media (max-width: 700px){
+    .product-info {
+        max-width: 700px;
+        margin: 20px 10px 10px 10px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #DDd;
+    }
+    
+}
+
+@media(max-width: 500px){
+    a.back{
+        width: 50%;
+    }  
+}
+
+@media(min-width: 500px){
+    a.back{
+        width: 40%;
+    }  
+}
+
+@media(min-width: 651px){
+    a.back{
+        width: 25%;
+    }  
+}
+
