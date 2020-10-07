@@ -8,4 +8,5 @@
 <p>•Método ASYNC/AWAIT</p>
 <p>•Utilização do AXIOS</p>
 <p>•Desestruturação ES6+</p>
+<p>•Layout responsivo</p>
 
