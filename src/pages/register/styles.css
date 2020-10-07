@@ -133,3 +133,11 @@ form a:hover{
         color: white;
     }
 }
+
+@media (min-height: 500px){
+    form {
+        padding: 40px; 
+        
+    }
+}
+
