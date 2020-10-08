@@ -12,6 +12,8 @@ export default class Register extends Component {
     componentDidMount(){
         document.title = 'Cadastro de produtos';
     }
+
+    
     
     async getIndex(){
 
@@ -30,7 +32,6 @@ export default class Register extends Component {
             return
         }else{
             var res = await api.post(`/products` , info) 
-            
         }
 
         if(res.status === 200){
@@ -39,12 +40,16 @@ export default class Register extends Component {
         }else{
             alert("[ERRO]Dados incorretos")
             console.log(res.status)
-        }       
+        }    
+        
+
     }
 
+
     
-      
+
     
+ 
     render(){
 
 
@@ -73,7 +78,7 @@ export default class Register extends Component {
 
                     </div>
                     
-                    <button type="button"  className="register" onClick={this.getIndex}> Register Product</button>    
+                    <button type="button" onClick={this.getIndex} className="register"> Register Product</button>    
                     <a href="/products">Acess Products</a>
                 </fieldset>
             </form> 

@@ -13,8 +13,8 @@ export default class Main extends Component{
     }
     
     componentDidMount(){
-        this.loadProducts()
         document.title = 'Listagem de produtos';
+        this.loadProducts()
 
     }
     
@@ -24,7 +24,7 @@ export default class Main extends Component{
         const {docs , ...productInfo} = response.data;
 
        
-        this.setState({products: docs , productInfo, page}) 
+        this.setState({products: docs , productInfo, page,}) 
     }
 
     prevPage = () => {
@@ -47,17 +47,21 @@ export default class Main extends Component{
         this.loadProducts(pageNumber)
     }
 
-    deleteProducts = async() => {
-        
-        await api.delete(`/products/:id`)
+    deleteProducts = async(id) => {
 
-        return console.log('Apagado com sucesso')
-   
+        const {products} = this.state
+    
+        const del = await api.delete(`/del/${products[0]._id}`)
+
+        this.componentDidMount()
+
     }
      
     render(){
 
         const {products , page, productInfo} = this.state
+
+        
 
             
         return (
@@ -81,7 +85,7 @@ export default class Main extends Component{
                     <strong>{product.title}</strong>
                     <p>{product.description}</p>
                     <Link to={`/products/${product._id}`}>Acessar</Link>
-                    <button>Deletar</button>
+                    <button onClick={this.deleteProducts}>Deletar</button>
                 </article>
             
             ))}
